@@ -1,0 +1,170 @@
+body {
+  background-image: url(https://i0.wp.com/www.nlarenas.com/wp-content/uploads/como-identificar-boeing-737-max-saber-estoy-volando.jpg?w=960&ssl=1);
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-size: 100vw 100vh;  
+  background-attachment: fixed;
+  font-size: 17px;
+}
+              
+.logo {
+  max-width: 12em;
+  width: 12em;
+  height: 5.5em;
+  border-style: none;
+}
+             
+.area {
+  max-width: 100%;
+  padding: auto;
+  background: linear-gradient(95deg, #cbd4dc 59%, #9fc1e0, #8bbbe5);
+}
+             
+.box-lema {
+  max-width: 70%;
+  margin: 3em auto;
+  padding: auto;
+  background: linear-gradient(450deg, rgba(203, 212, 220, 0.8) 45%, rgba(159, 192, 224, 0.8) 60%, rgba(139, 187, 229, 0.8));
+}
+             
+.area, .box-lema {
+  border-style: solid;
+  border-color: #062540;
+  border-left: none;
+  border-right: none;
+}
+             
+.lema {
+  text-align: center;
+  margin: auto;
+  padding: 9px;
+  font-size: 17px;
+  color: #021d31;
+}
+             
+.main {
+  max-width: 940px;
+  width: 46%;
+  min-width: 300px;
+  margin: 30px auto;
+  padding: 1.2em 1.6em 1.2em 1.6em;
+  background: linear-gradient(440deg, rgba(203, 212, 220, 0.8) 45%, rgba(159, 192, 224, 0.8) 60%, rgba(139, 187, 229, 0.8));
+  border-radius: 10px;
+  border-style: none;
+  font-size: 17px;
+}
+             
+.box-title {
+  padding: 3px auto;
+  margin: 5px auto 25px;
+  border-style: none;
+}
+             
+h1, p {
+  text-align: center;
+}
+             
+h1 {
+  font-size: 35px;
+  margin: 5px auto;
+}
+             
+p {
+  font-size: 17px;
+  margin: 10px auto 15px;
+}
+             
+.symbol {
+  width: 47px;
+  height: 47px;
+  border-style: double;
+  border-radius: 120px;
+}
+             
+legend {
+  margin: auto;
+}
+             
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+  margin: 1em auto;
+  padding: 0.3em;
+  border-top: 5px double #1C3F60;
+  border-radius: 17px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+              
+div {
+  margin: auto;
+}
+             
+input,
+textarea,
+select{
+  margin: 9px 0 0 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 2.8em;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #e6f1fb;
+  font-size: 17px;
+}
+             
+label {
+  display: block;
+  margin: 0.5rem 0 1rem;
+}
+             
+.check {
+  display: inline-block;
+  width: unset;
+  margin:  auto;
+  padding: 2px 7px;
+  vertical-align: middle;
+}
+             
+.score,.recommend {
+  text-align: center;
+}
+             
+h1, p, label,input,
+textarea,
+select {
+  font-family: Candara;
+  color:#021d31;
+}
+             
+.checkbox {
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 1px;
+}
+             
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: hsl(216, 38%, 45%);
+  border-color: white;
+  min-width: 275px;
+}
+             
+a {
+  color: #0e5390;
+}
+             
+a:visited {
+  color: #285176;
+}
+             
+a:hover {
+  color: #346b9b;
+}
+             
+a:active {
+  color: #042c50;
+}

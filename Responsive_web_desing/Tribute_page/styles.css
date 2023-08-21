@@ -1,0 +1,175 @@
+* {
+  box-sizing: content-box;
+}
+             
+html {
+  font-size: 10px;
+}
+             
+body {
+  background-color: white;
+  padding: 1rem 3.3rem;
+  margin: 0;
+  font-size: 1.7rem;
+  max-width: 100%;
+}
+             
+.cd {
+  width: 15px;
+  height:15px;
+  background-color: rgb(246,167,0);
+  margin: 2rem auto 1rem;
+}
+             
+hr {
+  border: black 0.5px solid;
+  margin-bottom: 0;
+}
+             
+.dd {
+  width: 100px;
+  height: 7px;
+  background-color: #820000;
+  margin: 0 auto;
+}
+             
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 2rem auto 0.4px;
+  font-size: 4.5rem;
+}
+             
+.date {
+  text-align: center;
+  margin: 0 auto 3.5rem;
+}
+             
+h1, .date, h3 {
+  font-weight: 800;
+}
+             
+.date, h3 {
+  font-size: 2.5rem;
+}
+             
+.image {
+  background-color: rgb(20, 30, 40);
+  margin: 0 auto 5rem;
+  padding: 2rem 2rem 1rem;
+  width: max(75%, 10vw);
+  min-width: 235px;
+  min-height: 222px;
+  border-radius: 0.8rem;
+}
+             
+.image-1 {
+  max-width: 100%;
+  width: max(75%, 10vw);
+  min-width: 235px;
+  min-height: 222px;
+  margin: 0 auto 0.8rem;
+  display: block;
+  object-fit: cover;
+}
+             
+figcaption {
+  margin: 0 13% 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: orangered;
+}
+             
+p {
+  text-align: justify;
+  margin: 0 1rem 3.3rem;
+  letter-spacing: 0.1px;
+}
+             
+p, li, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+             
+.letter::first-letter {
+  font-size: 6rem;
+  color: orangered;
+  float: left;
+  margin: -1rem 1rem;
+}
+             
+h3 { 
+  text-align: justify;
+  margin: 0 1rem 3rem;
+  color: #343434;
+}
+             
+strong {
+  color: #337DFF;
+}
+             
+li {
+  margin: 0 -1rem 1rem;
+  text-align: justify;
+  list-style: none;
+}
+             
+.image-cite {
+  background-color: rgba(205, 205,205, 0.5);
+  border-radius: 5.5px;
+  width: 70vw;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  min-width: 245px;
+  min-height: 222px;
+  overflow: hidden;
+}
+             
+.image-2 {
+  margin: 2rem auto 2rem;
+  border-radius: 20px;
+  display: flex;
+  object-fit: cover;
+}
+             
+.cite {
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+}
+             
+.cite::before, .cite::after {
+  content:'" ';
+  font-size: 3.5rem;
+}
+             
+.firma {
+  float: right;
+  margin: 0 1rem 1rem;
+  font-size: 130%;
+  font-family: roman;
+}
+             
+h4 { 
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5;
+  color: #436B95;
+}
+                         
+a {
+  color: #0070B8;
+}
+             
+a:hover {
+  color:#1630BE;
+}
+             
+a:visited {
+  color: #7573A6;
+}
+             
+a:active {
+  color: #0018A8;
+}

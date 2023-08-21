@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Air Falcon: survey form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="area">
+          <a href="" target:"_self"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/2925e4884521d8f70cfcad3ae60cfe58_screen.jpg?ts=1669271030" alt="Air Falcon -air line-" class="logo"></a>
+        </div>
+        <div class="box-lema">
+          <p class="lema">Safety, confort and speed in your trips. Thank you for choosing us!</p>
+        </div>
+      </header>
+      <fieldset class="main">
+        <div class="box-title">
+          <h1 id="title">Air Falcon: survey form</h1>
+          <p id="description">Thank you for helpning us improve our service</p>
+        </div>
+        <form action=" " method="post" id="survey-form">
+          <fieldset class="box-1">
+            <legend>
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/c16b4b83896f9f94e49feb6a4524d7b6_screen.jpg?ts=1669378397" alt="falcon-symbol" class="symbol">
+            </legend>
+            <div>
+              <label for="name" id="name-label"> Name
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </label>
+              <label for="last-name" id="last-name-label"> Last-name
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last-name" required>
+              </label>
+              <label for="Age" id="number-label"> Age
+                <input type="number" id="number" name="last-name" placeholder="Age" max="120" min="18" required>
+              </label>
+              <label for="Date of Birth" id="date-label"> Date of Birth
+                <input type="date" id="date" name="date" placeholder="date of birth" required>
+              </label>
+              <label for="email" id="email-label"> Email
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="box-2">
+            <legend>
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/c16b4b83896f9f94e49feb6a4524d7b6_screen.jpg?ts=1669378397" alt="falcon-symbol" class="symbol">
+            </legend>
+            <div>
+              <p>What class do you usually travel in?</p>
+              <select id="dropdown" name="dropdown" required>
+                <option value=" ">Select option</option>
+                <option value="First class">First class</option>
+                <option value="Executive class">Executive class</option>
+                <option value="Premium economy class">Premium economy class</option>
+                <option value="Economy class">Economy class</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="box-3">
+            <legend>
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/c16b4b83896f9f94e49feb6a4524d7b6_screen.jpg?ts=1669378397" alt="falcon-symbol" class="symbol">
+            </legend>
+            <p>How do you rate the class in which you usually travel?</p>
+            <div class="score">
+              <label for="Excellent" class="check">
+                <input type="radio" id="excellent" value="excellent" name="score" class="check" checked> Excellent
+              </label>
+              <label for="Very good" class="check">
+                <input type="radio" id="very good" value="Very good" name="score" class="check"> Very good
+              </label>
+              <label for="Good" class="check">
+                <input type="radio" id="good" value="good" name="score" class="check"> Good
+              </label>
+              <label for="Bad" class="check">
+                <input type="radio" id="bad" value="bad" name="score" class="check"> Bad
+              </label>
+              <label for="Very bad" class="check">
+                <input type="radio" id="very bad" value="very bad" name="score" class="check"> Very bad
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="box-4">
+            <legend>
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/c16b4b83896f9f94e49feb6a4524d7b6_screen.jpg?ts=1669378397" alt="falcon-symbol" class="symbol">
+            </legend>
+            <div>
+              <p>Reasons why you travel with us?</p>
+              <select id="dropdown" name="dropdown" required>
+                <option>Select option</option>
+                <option value="Business">Business</option>
+                <option value="Sightseeing">Sightseeing</option>
+                <option value="Moving">Moving</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="box-5">
+            <legend>
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/c16b4b83896f9f94e49feb6a4524d7b6_screen.jpg?ts=1669378397" alt="falcon-symbol" class="symbol">
+            </legend>
+            <p>Would you recommend our <strong>Air Falcon</strong> to your friends?</p>
+            <div class="recommend">
+              <label for="yes" class="check">
+                <input type="radio" id="yes" value="yes" name="recommend" class="check"> Yes
+              </label>
+              <label for="no" class="check"> 
+                <input type="radio" id="no" value="no" name="recommend" class="check"> No
+              </label>
+              <label for="perhaps" class="check"> 
+                <input type="radio" id="perhaps" value="perhaps" name="recommend" class="check"> Perhaps
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="box-6">
+            <legend>
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/c16b4b83896f9f94e49feb6a4524d7b6_screen.jpg?ts=1669378397" alt="falcon-symbol" class="symbol">
+            </legend>
+            <div>
+              <p>Any comments or suggestions?</p>
+              <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4"></textarea>
+            </div>
+          </fieldset>
+          <div>
+            <label for="I want to receive information about products and services." class="checkbox ">
+              <input type="checkbox" id="service" value="I want to receive information about products and services" name="options" class="check"> I want to receive information about products and services.
+            </label>
+            <label for="I accept the privacy terms and conditions." class="checkbox ">
+              <input type="checkbox" id="terms" value="I accept the privacy terms and conditions" name="options" class="check" required> I accept the privacy <a href=" " target:"_blanck">terms and conditions</a>.
+            </label>
+          </div>
+          <div>
+            <input type="submit" id="submit" value="Submit" name="submit">
+          </div>
+        </form> 
+      </fieldset>
+    </div>
+  </body>
+</html>

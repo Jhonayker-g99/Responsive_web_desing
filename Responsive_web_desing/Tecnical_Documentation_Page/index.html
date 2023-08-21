@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Sintaxis de desestructuración JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header id"#title"><div class="tema-1">Sintaxis de desestructuración </div><div class="tema-2">JS</div></header>
+        <ul>
+          <li><a href="#Definición" class="nav-link">Definición</a></li>
+          <li><a href="#Extraer_valores_de_objetos" class="nav-link">     
+               Extraer valores de objetos</a></li>
+          <li><a href="#Asignar_variables_desde_objetos" class="nav-link">
+              Asignar variables desde objetos</a></li>
+          <li><a href="#Asignar_variables_desde_objetos_anidados" class="nav-link">
+              Asignar variables desde objetos anidados</a></li>
+          <li><a href="#Asignar_variables_desde_arreglos" class="nav-link">
+              Asignar variables desde arreglos</a></li>
+          <li><a href="#Elementos_rest" class="nav-link">
+              Elementos rest</a></li>
+          <li><a href="#Objeto_como_parámetro_de_función" class="nav-link" >Objeto como parámetro de     
+              función</a></li>
+          <li><a href="#Referencia" class="nav-link">Referencia</a></li>
+        </ul>
+      </nav>
+      <h1></h1>
+      <section class="main-section" id="Definición">
+        <header>Definición</header>
+        <article>
+          <p>Es una expresión que le permite extraer o &quot;desestructurar&quot; datos de estructuras 
+             de datos como matrices, objetos, mapas y conjuntos, y crear nuevas variables 
+             con esos datos específicos.</p>
+          <p>Le permite extraer propiedades de objetos y elementos de matrices de una sola vez de 
+             una manera &quot;fácil&quot;.</p>
+             <p>Este tema tiene varios puntos importantes que tocaremos acontinuación como los son:</p>
+          <ul class="lista">
+            <li>Extraer valores de objetos</li>
+            <li>Asignar variables desde objetos</li>
+            <li>Asignar variables desde objetos anidados</li>
+            <li>Asignar variables desde arreglos</li>
+            <li>Elementos rest</li>
+            <li>Objeto como parámetro de     
+                función</li>
+        </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Extraer_valores_de_objetos">
+        <header>Extraer valores de objetos</header>
+        <article>
+          <p>La sintaxis de desestructuración es una sintaxis especial introducida en <b>ES6</b>, para 
+             asignar los valores directamente desde un objeto. Considera el siguiente código <b>ES5</b>:</p>
+          <code>
+            <span class="const">const</span> user = { <span class="objetos">name</span>: &apos;John Doe&apos;, <span class="objetos">age</span>: 34 };<br>
+            <span class="const">const</span> <span class="variables">name</span> = user.<span class="objetos">name</span>;<br>
+            <span class="const">const</span> <span class="variables">age</span> = user.<span class="objetos">age</span>;
+          </code>
+          <p><var>name</var> tendría una cadena con valor John Doe, y <var>age</var> tendría el número 34.</p>
+          <p>Aquí hay una sentencia de asignación equivalente usando la sintaxis de 
+             desestructuración de <b>ES6</b>:</p>
+          <code>
+            <span class="const">const</span> { <span class="variables">name</span>, <span class="variables">age</span> } = user;
+          </code>
+          <p>De nuevo, <var>name</var> tendrá una cadena con valor John Doe, y <var>age</var> tendrá el número 34.</p>
+          <p>Aquí, las variables name y age serán creadas y se asignarán los valores respectivos a partir 
+             del objeto    user. Puedes observar que esto es mucho más limpio. Puedes extraer tantos o pocos valores
+             del objeto como desees.</p>
+          <code>
+            <span class="const">const</span> HIGH_TEMPERATURES = {<br>
+              <span class="objetos">yesterday</span>: 75,<br>
+              <span class="objetos">today</span>: 77,<br>
+              <span class="objetos">tomorrow</span>: 80<br>};<br>
+            <span class="const">const</span> {<span class="variables">today</span>, <span class="variables">tomorrow</span>} = HIGH_TEMPERATURES;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Asignar_variables_desde_objetos">
+        <header>Asignar variables desde objetos</header>
+        <article>
+          <p>La desestructuración te permite asignar un nuevo nombre de variable al extraer valores. 
+             Puedes hacer esto al poner el nuevo nombre después de dos puntos al asignar el valor.</p>
+          <p>Usando el mismo objeto del ejemplo anterior:</p>
+          <code><span class="const">const</span> user = { <span class="objetos">name</span>: &apos;John Doe&apos;, <span class="objetos">age</span>: 34 };</code>
+          <p>Así es como puedes dar nuevos nombres de variables en la asignación:</p>
+          <code>
+            <span class="const">const</span> { <span class="objetos">name</span>: <span class="variables">userName</span>, <span class="objetos">age</span>: <span class="variables">userAge</span> } = user;
+          </code>
+          <p>Puedes leerlo como <i>&quot;obtén el valor de <b>user.name</b> y asígnalo a una nueva 
+             variable llamada <var><b>userName</b></var>&quot;</i> y así sucesivamente. 
+             El valor de <var><b>userName</b></var> sería la cadena John Doe, 
+             y el valor de <var><b>userAge</b></var> sería el número 34.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Asignar_variables_desde_objetos_anidados">
+        <header>Asignar variables desde objetos anidados</header>
+        <article>
+          <p>Puedes usar los mismos principios de las dos lecciones anteriores para desestructurar 
+             los valores desde objetos anidados.</p>
+          <p>Usando un objeto similar a los ejemplos anteriores:</p>
+          <code>
+            <span class="const">const</span> user = {<br>
+              <span class="objetos">johnDoe</span>: {<br>
+              <span class="objetos">age</span>: 34,<br>
+              <span class="objetos">email</span>: &apos;johnDoe@freeCodeCamp.com&apos;<br>
+                    }<br>
+                  };
+          </code>
+          <p>Así es como se extraen los valores de propiedades de objetos y se los asigna a 
+             variables con el mismo nombre:</p>
+          <code>
+            <span class="const">const</span> { <span class="objetos">johnDoe</span>: { <span class="variables">age</span>, <span class="variables">email</span> }} = user;
+          </code>
+          <p>Y así es como se puede asignar los valores de las propiedades de un objeto a 
+              variables con diferentes nombres:</p>
+          <code>
+            <span class="const">const</span> { <span class="objetos">johnDoe</span>: { <span class="variables">age</span>: userAge, <span class="variables">email</span>: userEmail }} = user;
+          </code>
+      </article>
+      </section>
+      <section class="main-section" id="Asignar_variables_desde_arreglos">
+        <header>Asignar variables desde arreglos</header>
+         <article>
+         <p><b>ES6</b> hace que desestructurar arreglos sea tan fácil como desestructurar objetos.</p>
+         <p>Una diferencia clave entre el operador de propagación y la desestructuración de arreglos es que el
+            operador de propagación desempaca todos los contenidos de un arreglo en una lista separada por comas. 
+            En consecuencia, no puedes elegir qué elementos deseas asignar como variables. Desestructurar un arreglo
+            nos permite hacer exactamente eso:</p>
+         <code>
+           <span class="const">const</span> [<span class="parametro">a</span>, <span class="parametro">b</span>] = [1, 2, 3, 4, 5, 6];<br>
+               console.<span class="funcion">log</span>(a, b);
+         </code>
+         <p>La consola mostrará los valores de a, b, y c como 1, 2, 5.</p>
+         </article>
+      </section>
+      <section class="main-section" id="Elementos_rest">
+        <header>Elementos rest</header>
+        <article>
+          <p>En algunas situaciones que implican la desestructuración de arreglos, tal vez queramos recolectar 
+             el resto de elementos en un arreglo separado.</p>
+          <p>El resultado es similar a Array.prototype.<span class="funcion">slice</span>(), como se muestra a continuación:</p>
+          <code>
+            <span class="const">const</span> [<span class="parametro">a</span>, <span class="parametro">b</span>, <span class="parametro">...arr</span>] = [1, 2, 3, 4, 5, 7];<br>
+            console.<span class="funcion">log</span>(a, b);<br>
+            console.<span class="funcion">log</span>(arr);<br>
+          </code>
+          <p>La consola mostrará los valores 1, 2 y [3, 4, 5, 7].</p>
+          <p>Las variables <var>a</var> y <var>b</var> toman el primer y segundo valor del arreglo. Luego de esto, 
+             debido a la presencia de sintaxis rest, arr obtiene el rest de los valores en forma 
+             de un arreglo. El elemento rest sólo funciona correctamente como la última variable 
+             en la lista. Es decir, no se puede utilizar la sintaxis rest para capturar un sub arreglo 
+             que deje fuera el último elemento del arreglo original.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Objeto_como_parámetro_de_función">
+        <header>Objeto como parámetro de función</header>
+        <article>
+          <p>En algunos casos, se puede desestructurar el objeto en un propio argumento de función.</p>
+          <p>Considera el siguiente código:</p>
+          <code>
+            <span class="const">const</span> profileUpdate = (<span class="parametro">profileData</span>) => {<br>
+            <span class="const">const</span> { <span class="objetos">name</span>, <span class="objetos">age</span>, <span class="objetos">nationality</span>, <span class="objetos">location</span>} = <span class="variable">profileData</span>;<br>
+            }
+          </code>
+          <p>Esto desestructura efectivamente el objeto enviado a la función. 
+             Esto también se puede hacer en el lugar:</p>
+          <p>Cuando profileData es pasado a la función anterior, los valores son 
+             desestructurados desde el parámetro de función para su uso dentro de la función.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Referencia">
+        <header>Referencia</header>
+        <article>
+          <ul>
+            <li>
+              Toda la documentación en esta página está tomada de
+              <a href="https://www.freecodecamp.org/espanol/learn" target="_blank">freeCodeCamp</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
